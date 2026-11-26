@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+
+    <h1>Nome recebido</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const nome = params.get("nome");
+
+        document.getElementById("resultado").textContent =
+            "Olá, " + nome + "!";
+    </script>
+
+</body>
+</html>
