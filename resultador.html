@@ -13,6 +13,7 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         const nome = params.get("nome");
+		const dadoa = params.get("dadoa")
 
         document.getElementById("resultado").textContent =
             "Olá, " + nome + "!";
