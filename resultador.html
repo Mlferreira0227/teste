@@ -17,9 +17,12 @@
         const nome = params.get("nome");
 		const dadoa = params.get("dadoa")
 
+		document.getElementById("nome").textContent = dadoa;
+		document.getElementById("dadoa").textContent = dadoa;
+
         document.getElementById("resultado").textContent =
             "Olá, " + nome + "!";
-		document.getElementById("dadoa").textContent = dadoa;
+		
     </script>
 
 </body>
